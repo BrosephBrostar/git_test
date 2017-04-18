@@ -1,0 +1,46 @@
+/**
+ * Created by Nick on 31.03.2017.
+ */
+public class Main {
+    public static void main(String[] args) {
+        boolean p, q;
+        int a = 0, b = 0, c = 0;
+        System.out.println("P\tQ\tAND\tOR\tXOR\tNOT");
+        p = q = true;
+        if (p) a = 1;
+        if (p) c = 0;
+        if (q) b = 1;
+        System.out.print(a + "\t" + b + "\t");
+        System.out.print((a & b) + "\t" + (a | b) + "\t");
+        System.out.println((a ^ b) + "\t" + c);
+
+        p = true;
+        q = false;
+        if (p) a = 1;
+        if (p) c = 0;
+        if (q) b = 1;
+        System.out.print(a + "\t" + b + "\t");
+        System.out.print((a & b) + "\t" + (a | b) + "\t");
+        System.out.println((a ^ b) + "\t" + c);
+
+        p = false;
+        q = true;
+        if (p) a = 1;
+        if (p) c = 0;
+        if (q) b = 1;
+        System.out.print(a + "\t" + b + "\t");
+        System.out.print((a & b) + "\t" + (a | b) + "\t");
+        System.out.println((a ^ b) + "\t" + c);
+
+        p = false;
+        q = false;
+        if (p) a = 1;
+        if (p) c = 0;
+        if (q) b = 1;
+        System.out.print(a + "\t" + b + "\t");
+        System.out.print((a & b) + "\t" + (a | b) + "\t");
+        System.out.println((a ^ b) + "\t" + c);
+    }
+
+}
+
